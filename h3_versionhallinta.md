@@ -128,4 +128,30 @@ Huomasin muutamat virheet init.sls tiedostossa, jotka korjasin. ->
 
 Näiden muutosten jälkeen kävi näin, kun annoin taas komennon käynnistää tila internet-tools. ->
 
+	simo@palvelinsimo:~/testingnook$ sudo salt '*' state.apply internet-tools
+	palvelinsimo:
+	----------
+	ID: internet-tools
+	Function: pkg.installed
+	Result: False
+	Comment: Problem encountered installing package(s). Additional info follows:
+
+	errors:
+	- Running scope as unit: run-rbbce16f7f9a74527bf3edf9d8069c8c7.scope
+	E: Unable to locate package wikit
+	E: Unable to locate package browsh
 	
+	Started: 08:48:20.231406
+	Duration: 2237.185 ms
+	Changes:
+	Summary for palvelinsimo
+	------------
+	Succeeded: 0
+	Failed:    1
+	------------
+	Total states run:     1
+	Total run time:   2.237 s
+	ERROR: Minions returned with non-zero exit code
+
+Kyseisestä virheestä huomaa, että se ei löydä wikit tai browsh ohjelmien paketteja. Vaihdoin ne ohjelmat pois ja jätin googlerin. Lisäsin myös links ohjelman paketin salt tilaan.
+
