@@ -82,5 +82,15 @@ Joka antoi vastauksen. ->
 
 Kun menin tämän jälkeen katsomaan tiedostojani, oli testfile.txt palannut kansioon. 
 
-f)
+f) Päätin, että asennan hieman internet-työkaluja saltilla.
+
+Aloitin tekemällä /srv/salt hakemistoon uuden kansion ja vaihdoin paikkaa sinne. ->
+
+	simo@palvelinsimo:/srv/salt$ sudo mkdir internet-tools
+	simo@palvelinsimo:/srv/salt$ cd internet-tools
+
+Sitten tein kansioon init.sls tiedoston. ->
+
+	simo@palvelinsimo:/srv/salt/internet-tools$ sudoedit init.sls
+
 
