@@ -37,7 +37,16 @@ d) Git log komennon esimerkki. ->
 
 git diff komennon esimerkki. ->
 
-	 
+	simo@palvelinsimo:~/testingnook$ git diff
+
+	diff --git a/eroavaisuus.txt b/eroavaisuus.txt
+	deleted file mode 100644
+	index 36ed38b..0000000
+	--- a/eroavaisuus.txt
+	+++ /dev/null 
+	@@ -1 +0,0 @@
+	-Tämä on tiedostojen tiedosto.. 
+
 
 git blame komennon esimerkki. ->
 
