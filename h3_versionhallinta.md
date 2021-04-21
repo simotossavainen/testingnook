@@ -15,9 +15,20 @@ Sitten kloonasin githubiin tekemäni hakemiston koneelleni, jotta pystyn muokkaa
 
 Nyt voin tehdä muutoksia helposti gitillä omalla koneellani ja siirtää ne githubiin.
 
-b)
+d) Git log komennon esimerkki. ->
 
-c)
 
-d)
+
+git diff komennon esimerkki. ->
+
+
+
+git blame komennon esimerkki. ->
+
+
+
+
+e)
+
+f)
 
