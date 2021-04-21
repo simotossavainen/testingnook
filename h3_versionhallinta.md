@@ -93,4 +93,10 @@ Sitten tein kansioon init.sls tiedoston. ->
 
 	simo@palvelinsimo:/srv/salt/internet-tools$ sudoedit init.sls
 
+init.sls tiedostoon kirjoitin näin. ->
 
+	pkg.installed:
+ 	 pkgs:
+    	- wikit
+    	- googler
+    	- browsh
