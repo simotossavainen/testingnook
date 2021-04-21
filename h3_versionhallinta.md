@@ -100,3 +100,13 @@ init.sls tiedostoon kirjoitin näin. ->
 	    - wikit
 	    - googler
 	    - browsh
+
+Ennen kun ajoin kyseisen komennon, kokeilin, että salt toimii. ->
+
+	simo@palvelinsimo:~$ sudo salt '*' cmd.run hostname
+	palvelinsimo:
+	            palvelinsimo
+
+Se toimi, joten kokeilin internet-tools tilaa. ->
+
+	
