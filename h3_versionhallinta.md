@@ -35,6 +35,9 @@ d) Git log komennon esimerkki. ->
 
 	   a) kohtaa muokattu = lisätty salasanan muistaminen (tunti)
 
+git log komento siis tulostaa lokin, joka kertoo mitä muutoksia on tehty ja mihin aikaan
+
+
 git diff komennon esimerkki. ->
 
 	simo@palvelinsimo:~/testingnook$ git diff
