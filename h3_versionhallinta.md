@@ -222,3 +222,4 @@ Kun ajoin tilan uudelleen tulos oli tämä. ->
 	Total states run:     1
 	Total run time:  47.157 ms
 	
+Tilan uudelleen ajamisesta huomaa, että kummatkin paketit on jo asennettu ja muutoksia ei ole, joten kaikki on niin kuin pitääkin!
