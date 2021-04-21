@@ -119,4 +119,13 @@ Se toimi, joten kokeilin internet-tools tilaa. ->
 
 Huomasin muutamat virheet init.sls tiedostossa, jotka korjasin. ->
 
+	internet-tools:
+	  pkg.installed:
+	    - pkgs:
+	      - wikit
+	      - googler
+	      - browsh
+
+Näiden muutosten jälkeen kävi näin, kun annoin taas komennon käynnistää tila internet-tools. ->
+
 	
