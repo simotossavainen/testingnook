@@ -65,7 +65,22 @@ git blame komennon esimerkki. ->
 
 git blame komento siis kertoo viimeisimpien muutoksien tekijän ja muutoksien teon ajan.
 
-e)
+e) Aloitin tehtävän poistamalla tiedoston testfile.txt gitistä komennolla. ->
+
+	rm testfile.txt
+
+Sitten katsoin, että se oli varmasti poistunut listaamalla tiedostot kansiossa ja näin oli käynyt.
+
+Sen jälkeen tuhosin muutokset komennolla. ->
+
+
+	simo@palvelinsimo:~/testingnook$ git reset --hard
+
+Joka antoi vastauksen. ->
+	
+	HEAD is now at a64cfc8 h3 tehtävään kirjoitettu komentojen selityksiä
+
+Kun menin tämän jälkeen katsomaan tiedostojani, oli testfile.txt palannut kansioon. 
 
 f)
 
