@@ -174,23 +174,23 @@ Sitten ajoin salt tilan internet-tools uudestaan ja sain vastaukseksi tämän. -
 	    Duration: 6773.863 ms
 	     Changes:
 
-	----------
-	googler:
-	----------
-	new:
-	4.0-1
-	old:
-	liblz1:
-	----------
-	new:
-	1.11-7
-	old:
+	              ----------
+	              googler:
+	                  ----------
+	                  new:
+	                      4.0-1
+	                  old:
+	              liblz1:
+	                  ----------
+	                  new:
+	                      1.11-7
+	                  old:
 
-	links:
-	----------
-	new:
-	2.20.2-1
-	old:
+	              links:
+	                  ----------
+	                  new:
+	                      2.20.2-1
+	                  old:
 
 	Summary for palvelinsimo
 	------------
@@ -201,3 +201,24 @@ Sitten ajoin salt tilan internet-tools uudestaan ja sain vastaukseksi tämän. -
 	Total run time:   6.774 s
 
 Tila lähti siis toimimaan ja kaikki ohjelmat asennettiin/päivitettiin onnistuneesti!
+
+Kun ajoin tilan uudelleen tulos oli tämä. ->
+
+	palvelinsimo:
+	----------
+	          ID: internet-tools
+	    Function: pkg.installed
+	      Result: True
+	     Comment: All specified packages are already installed
+	     Started: 09:47:57.539371
+	    Duration: 47.157 ms
+	     Changes: 
+
+	Summary for palvelinsimo
+	------------
+	Succeeded: 1
+	Failed: 0
+	------------
+	Total states run:     1
+	Total run time:  47.157 ms
+	
