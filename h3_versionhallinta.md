@@ -154,5 +154,14 @@ Näiden muutosten jälkeen kävi näin, kun annoin taas komennon käynnistää t
 	Total run time:   2.237 s
 	ERROR: Minions returned with non-zero exit code
 
-Kyseisestä virheestä huomaa, että se ei löydä wikit tai browsh ohjelmien paketteja. Vaihdoin ne ohjelmat pois ja jätin googlerin. Lisäsin myös links ohjelman paketin salt tilaan.
+Kyseisestä virheestä huomaa, että se ei löydä wikit tai browsh ohjelmien paketteja. Vaihdoin ne ohjelmat pois ja jätin googlerin. Lisäsin myös links ohjelman paketin salt tilaan. Tein muutokset init.sls tiedostoon. ->
 
+	internet-tools:
+	  pkg.installed:
+	    - pkgs:
+	      - links
+	      - googler
+
+Sitten ajoin salt tilan internet-tools uudestaan. ->
+
+	
