@@ -109,4 +109,11 @@ Ennen kun ajoin kyseisen komennon, kokeilin, että salt toimii. ->
 
 Se toimi, joten kokeilin internet-tools tilaa. ->
 
-	
+	simo@palvelinsimo:~/testingnook$ sudo salt '*' state.apply internet-tools
+	palvelinsimo:
+	Data failed to compile:
+	----------
+	Too many functions declared in state 'pkgs' in SLS 'internet-tools'
+	ERROR: Minions returned with non-zero exit code
+
+
