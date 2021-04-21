@@ -105,7 +105,7 @@ Ennen kun ajoin kyseisen komennon, kokeilin, että salt toimii. ->
 
 	simo@palvelinsimo:~$ sudo salt '*' cmd.run hostname
 	palvelinsimo:
-	            palvelinsimo
+	    palvelinsimo
 
 Se toimi, joten kokeilin internet-tools tilaa. ->
 
