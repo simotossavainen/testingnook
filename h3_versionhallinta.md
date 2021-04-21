@@ -164,11 +164,16 @@ Kyseisestä virheestä huomaa, että se ei löydä wikit tai browsh ohjelmien pa
 
 Sitten ajoin salt tilan internet-tools uudestaan ja sain vastaukseksi tämän. ->
 
-	Result: True
-	Comment: The following packages were installed/updated: links, googler
-	Started: 09:12:11.988104
-	Duration: 6773.863 ms
-	Changes:
+	palvelinsimo:
+	----------
+	          ID: internet-tools
+	    Function: pkg.installed
+	      Result: True
+	     Comment: The following packages were installed/updated: links, googler
+	     Started: 09:12:11.988104
+	    Duration: 6773.863 ms
+	     Changes:
+
 	----------
 	googler:
 	----------
