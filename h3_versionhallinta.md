@@ -96,7 +96,7 @@ Sitten tein kansioon init.sls tiedoston. ->
 init.sls tiedostoon kirjoitin näin. ->
 
 	pkg.installed:
-  pkgs:
-    - wikit
-    - googler
-    - browsh
+	  pkgs:
+	    - wikit
+	    - googler
+	    - browsh
