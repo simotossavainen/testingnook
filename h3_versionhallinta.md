@@ -162,6 +162,37 @@ Kyseisestä virheestä huomaa, että se ei löydä wikit tai browsh ohjelmien pa
 	      - links
 	      - googler
 
-Sitten ajoin salt tilan internet-tools uudestaan. ->
+Sitten ajoin salt tilan internet-tools uudestaan ja sain vastaukseksi tämän. ->
 
-	
+	Result: True
+	Comment: The following packages were installed/updated: links, googler
+	Started: 09:12:11.988104
+	Duration: 6773.863 ms
+	Changes:
+	----------
+	googler:
+	----------
+	new:
+	4.0-1
+	old:
+	liblz1:
+	----------
+	new:
+	1.11-7
+	old:
+
+	links:
+	----------
+	new:
+	2.20.2-1
+	old:
+
+	Summary for palvelinsimo
+	------------
+	Succeeded: 1 (changed=1)
+	Failed:    0
+	------------
+	Total states run:     1
+	Total run time:   6.774 s
+
+Tila lähti siis toimimaan ja kaikki ohjelmat asennettiin/päivitettiin onnistuneesti!
