@@ -50,11 +50,20 @@ git diff komennon esimerkki. ->
 	@@ -1 +0,0 @@
 	-Tämä on tiedostojen tiedosto.. 
 
+git diff komento näyttää mitä eroavaisuuksia oman koneen ja githubin kansiolla on. Jos niitä ei ole git diff komento ei tee mitään.
+
 
 git blame komennon esimerkki. ->
 
+	simo@palvelinsimo:~/testingnook$ git blame testfile.txt
+ 
+	f2f5f761 (Simo Tossavainen  2021-04-21 07:09:18 +0000 1) testing git blame
+	00000000 (Not Committed Yet 2021-04-21 07:10:43 +0000 2)
+	00000000 (Not Committed Yet 2021-04-21 07:10:43 +0000 3) doing
+	00000000 (Not Committed Yet 2021-04-21 07:10:43 +0000 4) some
+	00000000 (Not Committed Yet 2021-04-21 07:10:43 +0000 5) changes
 
-
+git blame komento siis kertoo viimeisimpien muutoksien tekijän ja muutoksien teon ajan.
 
 e)
 
