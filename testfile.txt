@@ -1,1 +1,5 @@
 testing git blame 
+
+doing
+some
+changes
