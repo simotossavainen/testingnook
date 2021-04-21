@@ -117,3 +117,6 @@ Se toimi, joten kokeilin internet-tools tilaa. ->
 	ERROR: Minions returned with non-zero exit code
 
 
+Huomasin muutamat virheet init.sls tiedostossa, jotka korjasin. ->
+
+	
