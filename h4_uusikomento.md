@@ -21,6 +21,30 @@ Jonka jälkeen listasin tiedostot kyseisessa hakemistossa (/usr/local/bin), jost
 
 	-rwxr-xr-x  1 root root   36 Apr 28 07:00 hellow
 
+Sitten tein saman automatisoiden. Ensin tein salttiin uuden kansion.->
+
+        cd /srv/salt
+        sudo mkdir helloworld
+
+Sitten tein sinne init.sls tiedoston ja siirsin jo tekemäni hellow skriptin helloworld kansioon.
+
+        cd helloworld
+        sudo mv /usr/local/bin/hellow .
+        sudoedit init.sls
+
+init.sls tiedostoon kirjoitin näin.->
+
+        /usr/local/bin/hellow:
+          file.managed:
+            - source: salt://helloworld/hellow
+            - mode: 755
+
+Sitten ajoin tiedoston.->
+
+        sudo salt '*' state.apply hellow
+
+Joka antoi kyseisen vastauksen.->
+
 b)
 
 c)
