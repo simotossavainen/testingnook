@@ -45,6 +45,29 @@ Sitten ajoin tiedoston.->
 
 Joka antoi kyseisen vastauksen.->
 
+	palvelinsimo:
+	----------
+         	 ID: /usr/local/bin/hellow
+	    Function: file.managed
+	      Result: True
+	     Comment: File /usr/local/bin/hellow updated
+	     Started: 07:48:42.331529
+	    Duration: 25.854 ms
+	     Changes:
+	              ----------
+        	      diff:
+                	  New file
+             	 mode:
+                	  0755
+
+	Summary for palvelinsimo
+	------------
+	Succeeded: 1 (changed=1)
+	Failed:    0
+	------------
+	Total states run:     1
+	Total run time:  25.854 ms
+
 b)
 
 c)
