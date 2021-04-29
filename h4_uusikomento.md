@@ -95,7 +95,7 @@ Sinne kirjoitin seuraavasti.->
 
 	#!/bin/bash
 
-	curl wttr.in Helsinki
+	curl wttr.in/Helsinki
 	date
 
 Seuraavaksi menin ajamaan salt tilan.->
