@@ -72,8 +72,33 @@ b) Seuraavaksi asensin whatsup.sh tiedoston orjille saltilla, joka kertoo ajanko
 
 Tein saltille ensin uuden kansion.->
 
-	
+	cd /srv/salt
+	sudo mkdir whatsup
 
+Sitten Lisäsin kansioon init.sls tiedoston.->
+
+	cd whatsup
+	sudoedit init.sls
+
+Sinne kirjoitin seuraavasti.->
+
+	/usr/local/bin:
+	  file.managed:
+	    - source: salt://whatsup/whatsup.sh
+	    - mode: 755
+
+Sitten tein itse whatsup.sh tiedoston/skriptin
+
+	sudoedit whatsup.sh
+
+Sinne kirjoitin seuraavasti.->
+
+	#!/bin/bash
+
+	curl wttr.in Helsinki
+	date
+
+Seuraavaksi menin ajamaan salt tilan.->
 
 	simo@palvelinsimo:~$ sudo salt '*' state.apply whatsup
 	palvelinsimo:
@@ -98,6 +123,8 @@ Tein saltille ensin uuden kansion.->
 	------------
 	Total states run:     1
 	Total run time:  31.599 ms
+
+Tila toimi hyvin. :)
 
 c)
 
