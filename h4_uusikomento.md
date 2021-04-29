@@ -82,7 +82,7 @@ Sitten Lisäsin kansioon init.sls tiedoston.->
 
 Sinne kirjoitin seuraavasti.->
 
-	/usr/local/bin:
+	/usr/local/bin/whatsup.sh:
 	  file.managed:
 	    - source: salt://whatsup/whatsup.sh
 	    - mode: 755
