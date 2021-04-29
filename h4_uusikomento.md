@@ -126,7 +126,60 @@ Seuraavaksi menin ajamaan salt tilan.->
 
 Tila toimi hyvin. :)
 
-c)
+c)Seuraavaksi teen python skriptin ja asennan sen orjille saltilla.
+
+Aloitin tekemällä salttiin uuden kansion.->
+
+	cd /srv/salt
+	sudo mkdir hellopython
+
+Sitten menin kansioon ja tein sinne python skriptin.->
+
+	cd hellopython
+	sudoedit hello.py
+
+hello.py tiedostoon kirjoitin näin.->
+
+	#!/usr/bin/python3
+
+	print("Hei Simo! Pythonia vaihteeksi!")
+
+Sitten tein init.sls tiedoston.->
+
+	/usr/local/bin/hello.py:
+	  file.managed:
+	    source: salt://hellopython/hello.py
+	    mode: 755
+
+Sitten ajoin salt tilan.->
+
+	simo@palvelinsimo:~$ sudo salt '*' state.apply hellopython
+	palvelinsimo:
+	----------
+	          ID: /usr/local/bin/hello.py
+	    Function: file.managed
+	      Result: True
+	     Comment: File /usr/local/bin/hello.py updated
+	     Started: 11:47:59.730838
+	    Duration: 99.757 ms
+	     Changes:
+	              ----------
+	              diff:
+	                  New file
+	              mode:
+	                  0755
+
+	Summary for palvelinsimo
+	------------
+	Succeeded: 1 (changed=1)
+	Failed:    0
+	------------
+	Total states run:     1
+	Total run time:  99.757 ms
+
+Tila toimi onnistuneesti. :)
+
+
 
 d)
 
