@@ -68,7 +68,36 @@ Joka antoi kyseisen vastauksen.->
 	Total states run:     1
 	Total run time:  25.854 ms
 
-b)
+b) Seuraavaksi asensin whatsup.sh tiedoston orjille saltilla, joka kertoo ajankohtaisia tietoja. Tässä tapauksessa se kertoo sään ja päivämäärän.
+
+Tein saltille ensin uuden kansion.->
+
+	
+
+
+simo@palvelinsimo:~$ sudo salt '*' state.apply whatsup
+palvelinsimo:
+----------
+          ID: /usr/local/bin/whatsup.sh
+    Function: file.managed
+      Result: True
+     Comment: File /usr/local/bin/whatsup.sh updated
+     Started: 04:08:01.843695
+    Duration: 31.599 ms
+     Changes:
+              ----------
+              diff:
+                  New file
+              mode:
+                  0755
+
+Summary for palvelinsimo
+------------
+Succeeded: 1 (changed=1)
+Failed:    0
+------------
+Total states run:     1
+Total run time:  31.599 ms
 
 c)
 
