@@ -265,6 +265,17 @@ Sitten menin ajamaan salt tilan.->
 	Total states run:     1
 	Total run time: 122.904 ms 
 
+Toimii!
+
+Sitten testasin molempien skriptien toiminnan. ->
+
+	simo@palvelinsimo:~$ moi
+	moi maailma
+	simo@palvelinsimo:~$ myname
+	simo
+
+Toimii!
+
 e)
 
 e)
