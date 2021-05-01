@@ -199,6 +199,7 @@ Aloitin tekemällä uuden kansion salttiin.->
 
 	cd /srv/salt
 	sudo mkdir multiplefns
+	cd multiplefns	
 
 Sen jälkeen tein luomaani kansioon init.sls tiedoston sekä kansion jossa skriptini tulevat olemaan.
 
@@ -209,6 +210,9 @@ Ensin init.sls tiedosto.->
 	    - source: salt://multiplefns/scripts
 	    - file_mode: 755
 
+Sitten tein tuon scripts kansion, sekä sinne parit skriptit.->
+
+	cd 
 
 	simo@palvelinsimo:~$ sudo salt '*' state.apply multiplefns
 	palvelinsimo:
