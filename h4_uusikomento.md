@@ -179,7 +179,9 @@ Sitten ajoin salt tilan.->
 
 Tila toimi onnistuneesti. :)
 
+Sitten menin kokeilemaan skriptin ajamista. ->
 
+	
 
 d)
 
