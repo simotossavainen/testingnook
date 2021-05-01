@@ -181,6 +181,15 @@ Tila toimi onnistuneesti. :)
 
 Sitten menin kokeilemaan skriptin ajamista. ->
 
+        simo@palvelinsimo:~$ hello.py
+        /usr/local/bin/hello.py: line 4: syntax error near unexpected token `"Hei Simo! Pythonia vaihteeksi!"'
+        /usr/local/bin/hello.py: line 4: `print("Hei Simo! Pythonia vaihteeksi!")'
+
+Sain tuon näköisen virhekoodin, jonka jälkeen menin tarkistamaan init.sls tiedostoa, sekä hello.py tiedostoa.
+Tässä kävikin hassusti sillä tavalla, että en ole varma mitä muokkasin, mutta ohjelma korjaantui kuin itsestään.
+
+Ajoin siis hello.py:n uudestaan ja vastaus oli tämä. .>
+
 	
 
 d)
