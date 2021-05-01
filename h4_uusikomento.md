@@ -1,6 +1,6 @@
 # H4 Uusi komento
 
-a)Tein hei maailman (tässä tapauksessa tiedosto nimeltä hellow), joka tulostaa tekstin "Hello Finland!"
+a) Tein hei maailman (tässä tapauksessa tiedosto nimeltä hellow), joka tulostaa tekstin "Hello Finland!"
 
 Ensin loin tiedoston hellow /usr/local/bin hakemistoon->
 
@@ -126,7 +126,7 @@ Seuraavaksi menin ajamaan salt tilan.->
 
 Tila toimi hyvin. :)
 
-c)Seuraavaksi teen python skriptin ja asennan sen orjille saltilla.
+c) Seuraavaksi teen python skriptin ja asennan sen orjille saltilla.
 
 Aloitin tekemällä salttiin uuden kansion.->
 
@@ -185,14 +185,15 @@ Sitten menin kokeilemaan skriptin ajamista. ->
         /usr/local/bin/hello.py: line 4: syntax error near unexpected token `"Hei Simo! Pythonia vaihteeksi!"'
         /usr/local/bin/hello.py: line 4: `print("Hei Simo! Pythonia vaihteeksi!")'
 
-Sain tuon näköisen virhekoodin, jonka jälkeen menin tarkistamaan init.sls tiedostoa, sekä hello.py tiedostoa.
+Sain tuon näköisen virhekoodin, jonka jälkeen menin tarkistamaan/muokkaamaan init.sls tiedostoa, sekä hello.py tiedostoa.
 Tässä kävikin hassusti sillä tavalla, että en ole varma mitä muokkasin, mutta ohjelma korjaantui kuin itsestään.
 
 Ajoin siis hello.py:n uudestaan ja vastaus oli tämä. .>
 
-	
+	simo@palvelinsimo:~$ hello.py
+	Hei Simo! Pythonia vaihteeks!
 
-d)
+d) 
 
 e)
 
