@@ -210,9 +210,28 @@ Ensin init.sls tiedosto.->
 	    - source: salt://multiplefns/scripts
 	    - file_mode: 755
 
-Sitten tein tuon scripts kansion, sekä sinne parit skriptit.->
+Sitten tein tuon scripts kansion.->
 
-	cd 
+	sudo mkdir scripts
+	cd scripts
+
+Sinne lisäsin skriptejä.->
+
+	sudo nano moi
+
+	#!/bin/bash
+
+	echo "moi maailma"
+
+Ja toinen skripti.->
+
+	sudo nano myname
+
+	#!/bin/bash
+
+	whoami
+
+Sitten menin ajamaan salt tilan.->
 
 	simo@palvelinsimo:~$ sudo salt '*' state.apply multiplefns
 	palvelinsimo:
