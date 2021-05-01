@@ -193,7 +193,54 @@ Ajoin siis hello.py:n uudestaan ja vastaus oli tämä. .>
 	simo@palvelinsimo:~$ hello.py
 	Hei Simo! Pythonia vaihteeks!
 
-d) 
+d) Tässä teen kansion, josta salt tilan ajamalla kaikki skriptit tallentuu orjille ja testaan sen toimivuuden.
+
+Aloitin tekemällä uuden kansion salttiin.->
+
+	cd /srv/salt
+	sudo mkdir multiplefns
+
+Sen jälkeen tein luomaani kansioon init.sls tiedoston sekä kansion jossa skriptini tulevat olemaan.
+
+Ensin init.sls tiedosto.->
+
+	/usr/local/bin/:
+	  file.recurse:
+	    - source: salt://multiplefns/scripts
+	    - file_mode: 755
+
+
+simo@palvelinsimo:~$ sudo salt '*' state.apply multiplefns
+palvelinsimo:
+----------
+          ID: /usr/local/bin/
+    Function: file.recurse
+      Result: True
+     Comment: Recursively updated /usr/local/bin/
+     Started: 17:06:56.880409
+    Duration: 122.904 ms
+     Changes:
+              ----------
+              /usr/local/bin/moi:
+                  ----------
+                  diff:
+                      New file
+                  mode:
+                      0755
+              /usr/local/bin/myname:
+                  ----------
+                  diff:
+                      New file
+                  mode:
+                      0755
+
+Summary for palvelinsimo
+------------
+Succeeded: 1 (changed=1)
+Failed:    0
+------------
+Total states run:     1
+Total run time: 122.904 ms 
 
 e)
 
