@@ -93,7 +93,7 @@ c) CSI Pasila, aikajanoista hieman.
 
 Esimerkki aikajanasta.->
 	
-	
+	simo@palvelinsimo:~/testingnook$ cd /etc/; sudo find -printf '%T+ %p\n'|sort|tail
 	2021-05-05+07:50:47.3972230990 ./apt/sources.list.d/salt.list.save
 	2021-05-05+07:50:47.3972230990 ./apt/sources.list.save
 	2021-05-05+07:50:47.4292225660 ./apt/sources.list
