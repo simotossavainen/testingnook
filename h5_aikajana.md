@@ -22,11 +22,11 @@ init.sls tiedostoon kirjoitan näin.->
 	      - nmap
 	      - libreoffice
 	      - firefox
-	      - 
+	      - flameshot
 	      - audacity
 	      - shutter
-	      - 
-	      - 
+	      - slack
+	      - pidgin
 
 Ajoin tilan.->
 
