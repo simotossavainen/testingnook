@@ -22,12 +22,35 @@ init.sls tiedostoon kirjoitan näin.->
 	      - nmap
 	      - libreoffice
 	      - firefox
-	      - eclipse ide
+	      - 
 	      - audacity
 	      - shutter
-	      - evernote
-	      - vivaldi
+	      - 
+	      - 
 
+Ajoin tilan.->
+
+	simo@palvelinsimo:/etc/salt$ sudo salt '*' state.apply favs
+	palvelinsimo:
+	----------
+	          ID: favs
+	    Function: pkg.installed
+	      Result: True
+	     Comment: All specified packages are already installed
+	     Started: 06:21:30.281931
+	    Duration: 94.257 ms
+	     Changes:
+	
+	Summary for palvelinsimo
+	------------
+	Succeeded: 1
+	Failed:    0
+	------------
+	Total states run:     1
+	Total run time:  94.257 ms
+	
+Toimii!
+(Ajoin sen siis jo kerran aikaisemmin, siitä syystä ei muutoksia)
 
 
 b)
