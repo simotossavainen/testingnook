@@ -53,7 +53,35 @@ Toimii!
 (Ajoin sen siis jo kerran aikaisemmin, siitä syystä ei muutoksia)
 
 
-b)
+b) Tässä lisään Microsoftin pakettivaraston ja asennan Visual Studio Coden
+
+Ensin etsin netistä tietoa, miten microsoftin pakettivarasto asennetaan ja löysinkin nopeasti oikeat komennot tehdä se.->
+
+	simo@palvelinsimo:~$ curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+	[sudo] password for simo:
+	OK
+	
+	simo@palvelinsimo:~$ sudo apt-add-repository https://packages.microsoft.com/ubuntu/20.04/prod
+	Hit:1 http://fi.archive.ubuntu.com/ubuntu focal InRelease
+	Get:2 http://fi.archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+	Get:3 http://fi.archive.ubuntu.com/ubuntu focal-backports InRelease [101 kB]
+	Get:4 http://fi.archive.ubuntu.com/ubuntu focal-security InRelease [109 kB]
+	Hit:5 https://repo.saltproject.io/py3/ubuntu/20.04/amd64/3003 focal InRelease
+	Get:6 http://fi.archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [953 kB]
+	Get:7 http://fi.archive.ubuntu.com/ubuntu focal-updates/main amd64 DEP-11 Metadata [265 kB]
+	Get:8 http://fi.archive.ubuntu.com/ubuntu focal-updates/main DEP-11 48x48 Icons [55.6 kB]
+	Get:9 http://fi.archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [765 kB]
+	Get:10 http://fi.archive.ubuntu.com/ubuntu focal-updates/universe amd64 DEP-11 Metadata [303 kB]
+	Get:11 http://fi.archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 DEP-11 Metadata [2,468 B]
+	Get:12 http://fi.archive.ubuntu.com/ubuntu focal-backports/universe amd64 DEP-11 Metadata [1,768 B]
+	Get:13 https://packages.microsoft.com/ubuntu/20.04/prod focal InRelease [10.5 kB]
+	Get:14 http://fi.archive.ubuntu.com/ubuntu focal-security/main amd64 DEP-11 Metadata [24.4 kB]
+	Get:15 http://fi.archive.ubuntu.com/ubuntu focal-security/universe amd64 DEP-11 Metadata [58.3 kB]
+	Get:16 https://packages.microsoft.com/ubuntu/20.04/prod focal/main amd64 Packages [68.2 kB]
+	Fetched 2,830 kB in 3s (1,109 kB/s)
+	Reading package lists... Done
+
+c)
 
 c)
 
