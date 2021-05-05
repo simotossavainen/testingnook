@@ -14,7 +14,21 @@ Sitten menen kansion sisään ja teen sinne init.sls tiedoston.->
 
 init.sls tiedostoon kirjoitan näin.->
 
-	/
+	favs:
+	  pkgs.installed:
+	    - pkgs:
+	      - tree
+	      - vlc
+	      - nmap
+	      - libreoffice
+	      - firefox
+	      - eclipse ide
+	      - audacity
+	      - shutter
+	      - evernote
+	      - vivaldi
+
+
 
 b)
 
