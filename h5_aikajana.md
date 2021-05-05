@@ -81,6 +81,14 @@ Ensin etsin netistä tietoa, miten microsoftin pakettivarasto asennetaan ja löy
 	Fetched 2,830 kB in 3s (1,109 kB/s)
 	Reading package lists... Done
 
+
+Visual Studio Coden asentaminen kävi tämän jälkeen kätevästi käyttämällä seuraavaa komentoa.->
+
+	simo@palvelinsimo:~/testingnook$ sudo snap install --classic code
+	code 3c4e3df9 from Visual Studio Code (vscode) installed
+
+Ohjelma asentui hyvin. 
+
 c)
 
 c)
