@@ -105,6 +105,11 @@ Esimerkki aikajanasta.->
 	2021-05-05+08:09:26.3144303950 ./systemd/system/multi-user.target.wants
 	2021-05-05+08:09:26.3144303950 ./systemd/system/multi-user.target.wants/snap-code-62.mount
 	
+Selitystä komennon eri osista.->
+
+Osa "cd /etc/" kertoo, että ollaan paikassa /etc.
+Osa "sudo" tarkoittaa "superuser do" eli saadaan kaikki oikeudet.
+Osa "find" viittaa siihen, että etsitään jotain tiedostoa.
 
 
 c)
