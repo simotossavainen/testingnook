@@ -110,7 +110,13 @@ Selitystä komennon eri osista.->
 Osa "cd /etc/" kertoo, että ollaan paikassa /etc.
 Osa "sudo" tarkoittaa "superuser do" eli saadaan kaikki oikeudet.
 Osa "find" viittaa siihen, että etsitään jotain tiedostoa.
-Osa -printf
+Tähän osaan (-printf) kopioin manuaalista suoraan vastauksen, koska se vaikutti parhaimmalta vaihtoehdolta:
+
+True; print the full file name into file file.  If file does  not  exist
+when find is run, it is created; if it does exist, it is truncated.
+
+Osassa "'%T+ %p\n'" %T+ on viimeisin muutoksen ajankohta, %p tiedostonimi hakemistopolulla ja n\ on uusi rivi.
+
 
 c)
 
