@@ -89,7 +89,23 @@ Visual Studio Coden asentaminen kävi tämän jälkeen kätevästi käyttämäll
 
 Ohjelma asentui hyvin. 
 
-c)
+c) CSI Pasila, aikajanoista hieman.
+
+Esimerkki aikajanasta.->
+	
+	
+	2021-05-05+07:50:47.3972230990 ./apt/sources.list.d/salt.list.save
+	2021-05-05+07:50:47.3972230990 ./apt/sources.list.save
+	2021-05-05+07:50:47.4292225660 ./apt/sources.list
+	2021-05-05+07:50:47.4292225660 ./apt/sources.list.d/salt.list
+	2021-05-05+08:08:50.2948464210 ./systemd/system/snap-core-10958.mount
+	2021-05-05+08:08:50.8348401730 ./systemd/system/multi-user.target.wants/snap-core-10958.mount
+	2021-05-05+08:09:25.5664390170 ./systemd/system/snap-code-62.mount
+	2021-05-05+08:09:25.5744389250 ./systemd/system
+	2021-05-05+08:09:26.3144303950 ./systemd/system/multi-user.target.wants
+	2021-05-05+08:09:26.3144303950 ./systemd/system/multi-user.target.wants/snap-code-62.mount
+	
+
 
 c)
 
