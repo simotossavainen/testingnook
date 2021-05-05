@@ -110,7 +110,7 @@ Selitystä komennon eri osista.->
 Osa "cd /etc/" kertoo, että ollaan paikassa /etc.
 Osa "sudo" tarkoittaa "superuser do" eli saadaan kaikki oikeudet.
 Osa "find" viittaa siihen, että etsitään jotain tiedostoa.
-
+Osa -printf
 
 c)
 
